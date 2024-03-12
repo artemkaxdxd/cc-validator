@@ -18,6 +18,7 @@ docker run -p 8080:8080 --name cc-validator credit-card-validator
 This will build a Docker image for the project and run it on port 8080.
 
 3. **Send a validation request:**
+
 Make a POST request to `http://localhost:8080/validate` with the following body in JSON format:
 
 ```json
