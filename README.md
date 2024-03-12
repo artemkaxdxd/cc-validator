@@ -15,10 +15,10 @@ docker build -t credit-card-validator .
 docker run -p 8080:8080 --name cc-validator credit-card-validator
 ```
 
-This will build a Docker image for the project and run it on port 8000.
+This will build a Docker image for the project and run it on port 8080.
 
 3. **Send a validation request:**
-Make a POST request to http://localhost:8000/validate with the following body in JSON format:
+Make a POST request to `http://localhost:8080/validate` with the following body in JSON format:
 
 ```json
 {
@@ -28,6 +28,6 @@ Make a POST request to http://localhost:8000/validate with the following body in
 }
 ```
 
-Replace "4111111111111111" with the actual credit card number you want to validate.
+Replace `"4111111111111111"` with the actual credit card number you want to validate.
 
 The response will indicate whether the credit card is valid or not.
